@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C71FF8F91EAE0F8E00E6C8D2 /* All-Btn-BackOfLight-Highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C71FF8F81EAE0F8E00E6C8D2 /* All-Btn-BackOfLight-Highlighted@2x.png */; };
 		C73D4D521EADAE3700ED8308 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D4D511EADAE3700ED8308 /* AppDelegate.m */; };
 		C73D4D551EADAE3700ED8308 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D4D541EADAE3700ED8308 /* main.m */; };
 		C73D4D581EADAE3700ED8308 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D4D571EADAE3700ED8308 /* ViewController.m */; };
 		C73D4D5A1EADAE3700ED8308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C73D4D591EADAE3700ED8308 /* Assets.xcassets */; };
 		C73D4D5D1EADAE3700ED8308 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C73D4D5B1EADAE3700ED8308 /* Main.storyboard */; };
+		C73D4E211EADE68B00ED8308 /* MMovieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D4E201EADE68B00ED8308 /* MMovieModel.m */; };
+		C73D4E2B1EADF12B00ED8308 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D4E291EADF12B00ED8308 /* DetailViewController.m */; };
+		C73D4E2C1EADF12B00ED8308 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C73D4E2A1EADF12B00ED8308 /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C71FF8F81EAE0F8E00E6C8D2 /* All-Btn-BackOfLight-Highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "All-Btn-BackOfLight-Highlighted@2x.png"; sourceTree = "<group>"; };
 		C73D4D4D1EADAE3700ED8308 /* MVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C73D4D501EADAE3700ED8308 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C73D4D511EADAE3700ED8308 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -24,6 +29,12 @@
 		C73D4D591EADAE3700ED8308 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C73D4D5C1EADAE3700ED8308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C73D4D5E1EADAE3700ED8308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C73D4E1F1EADE68B00ED8308 /* MMovieModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMovieModel.h; sourceTree = "<group>"; };
+		C73D4E201EADE68B00ED8308 /* MMovieModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMovieModel.m; sourceTree = "<group>"; };
+		C73D4E281EADF12B00ED8308 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		C73D4E291EADF12B00ED8308 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		C73D4E2A1EADF12B00ED8308 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		C73D4E2D1EADF56400ED8308 /* MVideo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MVideo.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +53,7 @@
 			children = (
 				C73D4D4F1EADAE3700ED8308 /* MVideo */,
 				C73D4D4E1EADAE3700ED8308 /* Products */,
+				C73D4E251EADEE3800ED8308 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +68,17 @@
 		C73D4D4F1EADAE3700ED8308 /* MVideo */ = {
 			isa = PBXGroup;
 			children = (
+				C73D4E2D1EADF56400ED8308 /* MVideo.entitlements */,
 				C73D4D501EADAE3700ED8308 /* AppDelegate.h */,
 				C73D4D511EADAE3700ED8308 /* AppDelegate.m */,
 				C73D4D561EADAE3700ED8308 /* ViewController.h */,
 				C73D4D571EADAE3700ED8308 /* ViewController.m */,
+				C73D4E1F1EADE68B00ED8308 /* MMovieModel.h */,
+				C73D4E201EADE68B00ED8308 /* MMovieModel.m */,
+				C71FF8F81EAE0F8E00E6C8D2 /* All-Btn-BackOfLight-Highlighted@2x.png */,
+				C73D4E281EADF12B00ED8308 /* DetailViewController.h */,
+				C73D4E291EADF12B00ED8308 /* DetailViewController.m */,
+				C73D4E2A1EADF12B00ED8308 /* DetailViewController.xib */,
 				C73D4D591EADAE3700ED8308 /* Assets.xcassets */,
 				C73D4D5B1EADAE3700ED8308 /* Main.storyboard */,
 				C73D4D5E1EADAE3700ED8308 /* Info.plist */,
@@ -74,6 +93,13 @@
 				C73D4D541EADAE3700ED8308 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C73D4E251EADEE3800ED8308 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,7 +133,13 @@
 				TargetAttributes = {
 					C73D4D4C1EADAE3700ED8308 = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = M675EFBDE2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -135,7 +167,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C73D4D5A1EADAE3700ED8308 /* Assets.xcassets in Resources */,
+				C73D4E2C1EADF12B00ED8308 /* DetailViewController.xib in Resources */,
 				C73D4D5D1EADAE3700ED8308 /* Main.storyboard in Resources */,
+				C71FF8F91EAE0F8E00E6C8D2 /* All-Btn-BackOfLight-Highlighted@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,8 +180,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C73D4E2B1EADF12B00ED8308 /* DetailViewController.m in Sources */,
 				C73D4D581EADAE3700ED8308 /* ViewController.m in Sources */,
 				C73D4D551EADAE3700ED8308 /* main.m in Sources */,
+				C73D4E211EADE68B00ED8308 /* MMovieModel.m in Sources */,
 				C73D4D521EADAE3700ED8308 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,11 +295,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MVideo/MVideo.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = M675EFBDE2;
 				INFOPLIST_FILE = MVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sohu.MVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -271,11 +311,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MVideo/MVideo.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = M675EFBDE2;
 				INFOPLIST_FILE = MVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sohu.MVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -298,6 +342,7 @@
 				C73D4D631EADAE3700ED8308 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
