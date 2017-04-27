@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1C3E79343299D13269F1487 /* libPods-MVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B47EF1965D27E0670B59074 /* libPods-MVideo.a */; };
 		C71FF8F91EAE0F8E00E6C8D2 /* All-Btn-BackOfLight-Highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C71FF8F81EAE0F8E00E6C8D2 /* All-Btn-BackOfLight-Highlighted@2x.png */; };
 		C73D4D521EADAE3700ED8308 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D4D511EADAE3700ED8308 /* AppDelegate.m */; };
 		C73D4D551EADAE3700ED8308 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D4D541EADAE3700ED8308 /* main.m */; };
@@ -19,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B47EF1965D27E0670B59074 /* libPods-MVideo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVideo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92827552F4C8A484A5FFADA0 /* Pods-MVideo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVideo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVideo/Pods-MVideo.debug.xcconfig"; sourceTree = "<group>"; };
+		9E0E224B740CDA868624CEE6 /* Pods-MVideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVideo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVideo/Pods-MVideo.release.xcconfig"; sourceTree = "<group>"; };
 		C71FF8F81EAE0F8E00E6C8D2 /* All-Btn-BackOfLight-Highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "All-Btn-BackOfLight-Highlighted@2x.png"; sourceTree = "<group>"; };
 		C73D4D4D1EADAE3700ED8308 /* MVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C73D4D501EADAE3700ED8308 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,18 +46,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1C3E79343299D13269F1487 /* libPods-MVideo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7789832C92E54E1D1E977708 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92827552F4C8A484A5FFADA0 /* Pods-MVideo.debug.xcconfig */,
+				9E0E224B740CDA868624CEE6 /* Pods-MVideo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C73D4D441EADAE3700ED8308 = {
 			isa = PBXGroup;
 			children = (
 				C73D4D4F1EADAE3700ED8308 /* MVideo */,
 				C73D4D4E1EADAE3700ED8308 /* Products */,
 				C73D4E251EADEE3800ED8308 /* Frameworks */,
+				7789832C92E54E1D1E977708 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +113,7 @@
 		C73D4E251EADEE3800ED8308 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2B47EF1965D27E0670B59074 /* libPods-MVideo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -109,9 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C73D4D611EADAE3700ED8308 /* Build configuration list for PBXNativeTarget "MVideo" */;
 			buildPhases = (
+				F79715F802A630093E4A2A90 /* [CP] Check Pods Manifest.lock */,
 				C73D4D491EADAE3700ED8308 /* Sources */,
 				C73D4D4A1EADAE3700ED8308 /* Frameworks */,
 				C73D4D4B1EADAE3700ED8308 /* Resources */,
+				CF1E09A7CC472E22A48896AA /* [CP] Embed Pods Frameworks */,
+				60734F133F3629DA268960FA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,6 +193,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60734F133F3629DA268960FA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MVideo/Pods-MVideo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF1E09A7CC472E22A48896AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MVideo/Pods-MVideo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F79715F802A630093E4A2A90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C73D4D491EADAE3700ED8308 /* Sources */ = {
@@ -243,7 +310,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -285,7 +352,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -293,6 +360,7 @@
 		};
 		C73D4D621EADAE3700ED8308 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92827552F4C8A484A5FFADA0 /* Pods-MVideo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MVideo/MVideo.entitlements;
@@ -309,6 +377,7 @@
 		};
 		C73D4D631EADAE3700ED8308 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E0E224B740CDA868624CEE6 /* Pods-MVideo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MVideo/MVideo.entitlements;

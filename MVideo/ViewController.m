@@ -11,7 +11,9 @@
 #import "DetailViewController.h"
 #import <AVFoundation/AVFoundation.h>
 
-@interface ViewController()
+@interface ViewController(){
+    DetailViewController *viewController;
+}
 
 @property (nonatomic, strong) NSMutableArray    *originalSource;
 @property (nonatomic, strong) NSMutableArray    *dataSource;
@@ -170,9 +172,16 @@
         return;
     }
     
-    DetailViewController *viewController = [[DetailViewController alloc] initWithNibName:nil bundle:nil];
+    viewController = [[DetailViewController alloc] initWithNibName:nil bundle:nil];
     viewController.model = model;
-    [self presentViewControllerAsSheet:viewController];
-    
+    viewController.view.frame = self.view.bounds;
+    [self presentViewControllerAsModalWindow:viewController];
+   
 }
+
+- (void)viewDidLayout{
+    [super viewDidLayout];
+    viewController.view.frame = self.view.bounds;
+}
+
 @end

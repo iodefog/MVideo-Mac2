@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "MMovieModel.h"
+#import "Masonry.h"
 
 @interface DetailViewController : NSViewController
 
