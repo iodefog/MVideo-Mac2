@@ -11,11 +11,14 @@
 #import "DetailViewController.h"
 #import <AVFoundation/AVFoundation.h>
 
-@interface ViewController(){
+@interface ViewController() <NSTextFieldDelegate>
+{
     DetailViewController *viewController;
 }
 
+// 原始数据
 @property (nonatomic, strong) NSMutableArray    *originalSource;
+// 显示用的数据
 @property (nonatomic, strong) NSMutableArray    *dataSource;
 
 @end
@@ -177,6 +180,25 @@
     viewController.view.frame = self.view.bounds;
     [self presentViewControllerAsModalWindow:viewController];
    
+}
+
+
+#pragma mark - textField Delete
+
+- (void)controlTextDidChange:(NSNotification *)obj{
+    NSString *text = [obj.object stringValue];
+    if ([[text stringByReplacingOccurrencesOfString:@" " withString:@""] length]> 0) {
+        
+        NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF.title CONTAINS %@",text];
+        NSArray *resultArray = [self.originalSource filteredArrayUsingPredicate:pred];
+        [self.dataSource removeAllObjects];
+        [self.dataSource addObjectsFromArray:resultArray];
+    }
+    else {
+        [self.dataSource removeAllObjects];
+        [self.dataSource addObjectsFromArray:self.originalSource];
+    }
+    [self.tableView reloadData];
 }
 
 - (void)viewDidLayout{
