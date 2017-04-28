@@ -14,8 +14,9 @@
 
 - (void)setObject:(MMovieModel *)object{
     self.textField.cell.title = object.title;
-    NSImage *image = [NameCellView getThumbnailImage:object.url];
+//    NSImage *image = [NameCellView getThumbnailImage:object.url];
 //    NSImage *image = [NameCellView thumbnailImageForVideo:[NSURL URLWithString:object.url] atTime:0];
+    NSImage *image = [NSImage imageNamed:@"video"];
     self.imageView.image = image;
     
 }
