@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F832B741EB2C3770087602D /* NameCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F832B731EB2C3770087602D /* NameCellView.m */; };
 		A1C3E79343299D13269F1487 /* libPods-MVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B47EF1965D27E0670B59074 /* libPods-MVideo.a */; };
 		C71FF8F91EAE0F8E00E6C8D2 /* All-Btn-BackOfLight-Highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C71FF8F81EAE0F8E00E6C8D2 /* All-Btn-BackOfLight-Highlighted@2x.png */; };
 		C73D4D521EADAE3700ED8308 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D4D511EADAE3700ED8308 /* AppDelegate.m */; };
@@ -21,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		2B47EF1965D27E0670B59074 /* libPods-MVideo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVideo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F832B721EB2C3770087602D /* NameCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameCellView.h; sourceTree = "<group>"; };
+		4F832B731EB2C3770087602D /* NameCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameCellView.m; sourceTree = "<group>"; };
 		92827552F4C8A484A5FFADA0 /* Pods-MVideo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVideo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVideo/Pods-MVideo.debug.xcconfig"; sourceTree = "<group>"; };
 		9E0E224B740CDA868624CEE6 /* Pods-MVideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVideo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVideo/Pods-MVideo.release.xcconfig"; sourceTree = "<group>"; };
 		C71FF8F81EAE0F8E00E6C8D2 /* All-Btn-BackOfLight-Highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "All-Btn-BackOfLight-Highlighted@2x.png"; sourceTree = "<group>"; };
@@ -88,6 +91,8 @@
 				C73D4D511EADAE3700ED8308 /* AppDelegate.m */,
 				C73D4D561EADAE3700ED8308 /* ViewController.h */,
 				C73D4D571EADAE3700ED8308 /* ViewController.m */,
+				4F832B721EB2C3770087602D /* NameCellView.h */,
+				4F832B731EB2C3770087602D /* NameCellView.m */,
 				C73D4E1F1EADE68B00ED8308 /* MMovieModel.h */,
 				C73D4E201EADE68B00ED8308 /* MMovieModel.m */,
 				C71FF8F81EAE0F8E00E6C8D2 /* All-Btn-BackOfLight-Highlighted@2x.png */,
@@ -252,6 +257,7 @@
 				C73D4D551EADAE3700ED8308 /* main.m in Sources */,
 				C73D4E211EADE68B00ED8308 /* MMovieModel.m in Sources */,
 				C73D4D521EADAE3700ED8308 /* AppDelegate.m in Sources */,
+				4F832B741EB2C3770087602D /* NameCellView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

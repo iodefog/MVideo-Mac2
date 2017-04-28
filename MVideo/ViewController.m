@@ -10,6 +10,7 @@
 #import "MMovieModel.h"
 #import "DetailViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "NameCellView.h"
 
 @interface ViewController() <NSTextFieldDelegate>
 {
@@ -141,7 +142,7 @@
     MMovieModel *model = self.dataSource[row];
     if ([tableColumn.identifier isEqualToString:@"nameCellId"]) {
         // 名称
-        cell.textField.cell.title = model.title;
+        [(NameCellView *)cell setObject:model];
     }
     else if ([tableColumn.identifier isEqualToString:@"urlCellId"]) {
         // url
