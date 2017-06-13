@@ -178,6 +178,7 @@
     
     viewController = [[DetailViewController alloc] initWithNibName:nil bundle:nil];
     viewController.model = model;
+    viewController.title = model.title;
     viewController.view.frame = self.view.bounds;
     [self presentViewControllerAsModalWindow:viewController];
    

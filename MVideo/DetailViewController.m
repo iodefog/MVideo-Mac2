@@ -26,7 +26,6 @@
 
 - (void)viewDidLoad {
  
-    self.title = @"Hello";
     [super viewDidLoad];
     
     __weak typeof(self) mySelf = self;
