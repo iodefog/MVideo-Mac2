@@ -38,6 +38,7 @@
         [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
             NSString *text = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
             [[NSUserDefaults standardUserDefaults] setObject:text forKey:@"MVideoLiveListKey"];
+            [self.originalSource removeAllObjects];
             [self.dataSource removeAllObjects];
             [self transformVideoUrlFromString:text error:error];
             [self.tableView reloadData];
